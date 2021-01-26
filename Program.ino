@@ -11,7 +11,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   Serial.begin(9600);
-  Serial.println("DHT11 test!");
+  Serial.println("Environment Monitor");
 
   dht.begin();
 }
