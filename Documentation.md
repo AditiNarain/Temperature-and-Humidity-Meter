@@ -49,14 +49,16 @@ You can import library by importing it as given in image or by downloading the z
 
 ### Program Logic:
 
-initialise and headers 
-#include "DHT.h"
-#define DHTPIN 7     // Digital pin connected to the DHT sensor
-#define DHTTYPE DHT11   // it stated that we used DHT 11 sensor 
-DHT dht(DHTPIN, DHTTYPE);
+initialise and headers :
 
+    #include "DHT.h"
+    #define DHTPIN 7     // Digital pin connected to the DHT sensor
+    #define DHTTYPE DHT11   // it stated that we used DHT 11 sensor 
+    DHT dht(DHTPIN, DHTTYPE);
 
-  float h = dht.readHumidity();//Read and calculate humidity
-  // Read temperature as Celsius (the default)
-  float t = dht.readTemperature();//Read and calculate temperature
+Logic :
+
+    float h = dht.readHumidity();//Read and calculate humidity
+    // Read temperature as Celsius (the default)
+    float t = dht.readTemperature();//Read and calculate temperature
 
